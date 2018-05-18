@@ -7,8 +7,15 @@ function setup() {
   // put setup code here
 }
 
+function mouseClicked() {
+  if (mouseX > 11 && mouseY > 11 && mouseX < 286 && mouseY < 69){
+    document.location.href = "https://www.newmanschool.org/page/academics/upper-school/curriculum"
+  }
+}
+
 function draw() {
   image(world, 0, 0)
+  mouseClicked();
   //Antartica
   if (mouseY > 490){
     textSize(45);
@@ -60,10 +67,12 @@ function draw() {
     textSize(35);
     text ("Says there are a lot of asian languages", 300, 65);
   }
+  //Europe
   if (mouseX > 333 && mouseY < 214 && mouseY > 105 && mouseX < 426){
     textSize(35);
     text("Says hello to Europe", 300, 65);
   }
+  //Greenland and Iceland
   if (mouseY > 101 && mouseY < 158 && mouseX > 259 && mouseX < 330){
       textSize(35);
       text("says hello to greenland and iceland", 300, 65);
